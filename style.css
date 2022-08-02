@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+p {
+    line-height: 1.5rem;
+    color: hsl(204, 43%, 93%);
+}
+
+.container {
+    height: 475px;
+    width: 635px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.above {
+    padding: 40px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+h1 + h2 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.above p {
+    color: hsl(218, 22%, 67%);
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dollar-div {
+    margin-bottom: 8px;
+}
+
+#dollar {
+    font-size: 2rem;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#beside-dollar {
+    color: hsl(204, 43%, 93%);
+    vertical-align: middle;
+}
+
+.dollar-div + p {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    padding: 13px;
+    font-size: 18px;
+    color: white;
+}
+
+.right {
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding: 40px;
+    opacity: 0.7;
+}
+
+@media (max-width: 420px) {
+    body {
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .container {
+        margin: 75px 35px;
+        height: auto;
+    }
+
+    .above {
+        padding: 20px;
+    }
+
+    /* h1 {
+        font-size: 20px;
+    } */
+
+    .left {
+        height: auto;
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .right {
+        height: auto;
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+}
